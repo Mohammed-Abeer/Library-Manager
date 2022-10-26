@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DisplayMemberController">
+   <children>
+      <VBox prefHeight="500.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="tableView" prefHeight="450.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="idCol" minWidth="0.0" prefWidth="150.0" text="ID" />
+                <TableColumn fx:id="nameCol" prefWidth="150.0" text="Name" />
+                  <TableColumn fx:id="emailCol" prefWidth="150.0" text="Email" />
+                  <TableColumn fx:id="adminCol" prefWidth="150.0" text="Admin" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#makeRefresh" text="Refresh" />
+                  <Button fx:id="exitButton" alignment="CENTER" mnemonicParsing="false" onAction="#makeExit" text="Exit" textAlignment="CENTER" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
